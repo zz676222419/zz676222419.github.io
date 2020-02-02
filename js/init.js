@@ -26,11 +26,8 @@ $(function () {
 
 function loading() {
     $(function () {
-        let timer = setTimeout(function () {
             $('#preloader').fadeOut(1000);
             $("body").css({overflow:"auto"})
-            clearTimeout(timer);
-        },2000);
     })
 }
 function WindowScroll() {
@@ -57,7 +54,7 @@ function animateHeader() {
             $(".h-header").eq(0).addClass("animated fadeInLeft");
             clearTimeout(timer);
         }
-    },2001);
+    },100);
 }
 
 function animateDistance() {
